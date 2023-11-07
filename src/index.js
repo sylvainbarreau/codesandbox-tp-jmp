@@ -18,3 +18,6 @@ app.listen(PORT, () => {
   console.log(`PORT Listen At ${PORT}`);
 });
 
+//ex2
+app.use('/dream',express.static('public'));
+
