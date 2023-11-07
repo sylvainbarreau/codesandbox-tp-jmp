@@ -1,0 +1,275 @@
+        /*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+        
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Roboto';
+            font-size: 12;
+            color: dimgray;
+        }
+        
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        
+        p {
+            text-align: justify;
+        }
+        
+        .pcenter {
+            text-align: center;
+        }
+        /* Menu rétractable
+
+        @media(min-width:767px) {
+            .navbar {
+                padding: 20px 0;
+                -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                transition: background .5s ease-in-out, padding .5s ease-in-out;
+            }
+            .top-nav-collapse {
+                padding: 0;
+                + 563.20 .intro-section {
+                    height: auto;
+                    0.t
+                }
+            }
+            .intro-section {}
+            .etudiant-section {}
+            .pro-section {}
+            .etp-section {}
+            .contact-section {}
+        }*/
+        
+        @media(max-width:767px) {
+            .btn {
+                display: block;
+            }
+            #UPS {
+                width: 200px;
+                height: auto;
+            }
+        }
+        /* Gestion des sections */
+        
+        .intro-section {
+            padding-top: 35px;
+            padding-bottom: 20px;
+            margin-top: 50px;
+            text-align: center;
+            background: #fff;
+        }
+        
+        .etudiant-section {
+            padding-top: 50px;
+            text-align: center;
+            background: #eee;
+            padding-bottom: 40px;
+        }
+        
+        .pro-section {
+            padding-top: 50px;
+            text-align: center;
+            background: #fff;
+            padding-bottom: 40px;
+        }
+        
+        .etp-section {
+            padding-top: 50px;
+            text-align: center;
+            background: #eee;
+            padding-bottom: 40px;
+        }
+        
+        .contact-section {
+            padding-top: 50px;
+            text-align: center;
+            background: #fff;
+            padding-bottom: 10px;
+        }
+
+        .cpro-section {
+            padding-top: 20px;
+            text-align: center;
+            background: #fff;
+            padding-bottom: 20px;
+        }
+		
+		.organisation-section {
+            padding-top: 50px;
+            text-align: center;
+            background: #eee;
+            padding-bottom: 40px;
+        }
+        /* Modif Nav */
+        
+        .navbar {
+            background-color: #656466;
+        }
+        /* Modif couleur des liens de nav */
+        
+        .navbar-default .navbar-nav>li>a {
+            color: lightgray;
+            font-family: 'Orbitron';
+            font-weight: 700;
+        }
+        /* Décalage logo */
+        
+        .navbar-default .navbar-brand {
+            color: lightgray;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        div > img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            margin-left: auto;
+            margin-right: auto;
+            width: 220px;
+            margin-top: 10px;
+        }
+        
+        #DLP {
+            width: 220px;
+        }
+        #DCL {
+            width: 360px;
+        }
+        
+        .btn,
+        .btn-default h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+        }
+        
+        h1 {
+            font-family: 'Audiowide', sans-serif;
+        }
+        
+        h2 {
+            font-family: 'Orbitron';
+            margin-bottom: 20px;
+        }
+        
+        .table-responsive {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #Betu {
+            font-variant: small-caps;
+            color: #4000FF;
+        }
+        
+        #Bpro {
+            font-variant: small-caps;
+            color: #22CF00;
+        }
+        
+        #Betp {
+            font-variant: small-caps;
+            color: #2680FF;
+        }
+        
+        .footer-section {
+            background-color: white;
+            color: white;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        
+       /* .footer-section img {
+           display: inline-block;
+            height: auto;
+            width: auto;
+            margin-bottom: 10px;
+            max-width: 500px;
+            max-height: auto;
+        }
+        */
+        .etp-section p {
+            margin: 20px;
+        }
+        
+        .navbar-default .navbar-nav>li>a:hover {
+            color: #C00B12;
+        }
+        
+        .navbar-default .navbar-nav>li>a:focus {
+            color: lightgray;
+        }
+        
+        .navbar-default .navbar-brand:hover {
+            color: #C00B12;
+        }
+        
+        .navbar-default .navbar-brand:focus {
+            color: lightgray;
+        }
+        
+        .contact-section .btn {
+            margin-bottom: 10px;
+        }
+        
+        .etp-section p img {
+            background-color: #586372;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .intro-section p img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .etudiant-section p img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .footer-section {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        #alter {
+            margin-top: 20px;
+        }
+        div .cpro1 {
+            text-align: right;
+        }
+        div .cpro1 h3 {
+            margin-top: 5px;
+            color: #d11217;
+        }
+        div .cpro2 {
+            margin-top: 10px;
+            text-align: left;
+        }
+        .cpro-section h1{
+            text-align: center;
+        }
+        .cpro-section a{
+            text-align: center;
+        }
+        .logo_cpro {
+            width: 30%;
+        }
+        .sitecpro {
+               width: 200px;
+        }
+        
+#accordion { margin: 0 auto; color: dimgray; }
