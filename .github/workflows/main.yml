@@ -27,11 +27,11 @@ jobs:
       - name: push
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVEE }}
-          run: |
-            mkdir -p ~/.ssh/
-            echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-            chmod 600 ~/.ssh/id_rsa
-            ssh-keyscan -t rsa ssh-mmicastres-sb.alwaysdata.net >> ~/.ssh/known_hosts
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa ssh-mmicastres-sb.alwaysdata.net >> ~/.ssh/known_hosts
       - name: Push to Bare Repository
         run: |
           git remote add alwaysdata ssh-mmicastres-sb.alwaysdata.net
