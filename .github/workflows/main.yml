@@ -34,7 +34,7 @@ jobs:
           ssh-keyscan -t rsa ssh-mmicastres-sb.alwaysdata.net >> ~/.ssh/known_hosts
       - name: Push to Bare Repository
         run: |
-          git remote add alwaysdata ssh-mmicastres-sb.alwaysdata.net
+          git remote add alwaysdata ssh-mmicastres-sb.alwaysdata.net:~/node
           git push alwaysdata main
         env:
           GIT_SSH_COMMAND: 'ssh -o StrictHostKeyChecking=no'
