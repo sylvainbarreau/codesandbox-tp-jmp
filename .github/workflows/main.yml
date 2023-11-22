@@ -24,4 +24,17 @@ jobs:
         with:
           node-version: '20.9'
       - run: npm install simple-hello-world-example
-      
+      - name: push
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVEE }}
+          run: |
+            mkdir -p ~/.ssh/
+            echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+            chmod 600 ~/.ssh/id_rsa
+            ssh-keyscan -t rsa ssh-mmicastres-sb.alwaysdata.net >> ~/.ssh/known_hosts
+      - name: Push to Bare Repository
+        run: |
+          git remote add alwaysdata ssh-mmicastres-sb.alwaysdata.net
+          git push alwaysdata main
+        env:
+          GIT_SSH_COMMAND: 'ssh -o StrictHostKeyChecking=no'
