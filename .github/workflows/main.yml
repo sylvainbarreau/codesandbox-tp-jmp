@@ -36,6 +36,7 @@ jobs:
       - name: Push to Bare Repository
         run: |
           git remote add alwaysdata ssh-mmicastres-sb.alwaysdata.net:/home/mmicastres-sb/node
+          pwd
           git push alwaysdata main
         env:
           GIT_SSH_COMMAND: 'ssh -i /home/runner/work/codesandbox-tp-jmp/codesandbox-tp-jmp/.ssh/id_rsa -o StrictHostKeyChecking=no'
