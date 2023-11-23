@@ -37,4 +37,4 @@ jobs:
           git remote add alwaysdata ssh-mmicastres-sb.alwaysdata.net:/home/mmicastres-sb/node
           git push alwaysdata main
         env:
-          GIT_SSH_COMMAND: 'ssh -i /home/mmicastres-sb/.ssh/authorized_keys -o StrictHostKeyChecking=no'
+          GIT_SSH_COMMAND: 'ssh -i ~/.ssh/authorized_keys -o StrictHostKeyChecking=no'
