@@ -32,6 +32,7 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -t rsa ssh-mmicastres-sb.alwaysdata.net >> ~/.ssh/known_hosts
+          pwd
       - name: Push to Bare Repository
         run: |
           git remote add alwaysdata ssh-mmicastres-sb.alwaysdata.net:/home/mmicastres-sb/node
